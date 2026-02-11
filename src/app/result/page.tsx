@@ -71,9 +71,9 @@ export default function ResultPage() {
         <meta name="twitter:description" content="입력한 정보로 계산된 서울 아파트 매수 가능 금액을 확인하세요." />
         <meta name="twitter:image" content="https://aptgugu.com/og.png" />
       </Head>
-      <div className="h-screen bg-white flex flex-col overflow-hidden">
+      <div className="h-[100svh] bg-white flex flex-col overflow-hidden">
       {/* 메인 컨텐츠 영역 */}
-      <div className="flex-1 flex flex-col px-5 pt-6 pb-4">
+      <div className="flex-1 overflow-y-auto flex flex-col px-5 pt-6 pb-4">
       {/* 헤더 컴포넌트 사용 */}
       <Header backUrl="/regulation" />
 
@@ -161,7 +161,7 @@ export default function ResultPage() {
       </div>
 
       {/* 하단 고정 버튼 */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-5">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-5 pt-5 pb-10">
         <button
           onClick={handleSubmit}
           className="flex h-14 w-full justify-center items-center rounded-[300px] bg-primary text-white font-semibold text-base"

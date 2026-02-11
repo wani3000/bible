@@ -144,7 +144,7 @@ export default function PlanPage() {
         <meta name="twitter:description" content="내 자금 구성에 따라 어떤 방식으로 아파트를 매수할 수 있는지 계획표로 정리해드립니다." />
         <meta name="twitter:image" content="https://aptgugu.com/og.png" />
       </Head>
-      <div className="min-h-screen bg-white flex flex-col px-5 pt-6 pb-12">
+      <div className="h-[100svh] bg-white flex flex-col overflow-y-auto px-5 pt-6 pb-12">
         {/* 헤더 사용 */}
         <Header backUrl="/result/final" />
 

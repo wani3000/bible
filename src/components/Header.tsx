@@ -44,7 +44,7 @@ export default function Header({ backUrl, title, rightAction, showMenu = false }
 
   return (
     <>
-      <div className="flex justify-between items-center mb-6 pt-0">
+      <div className="sticky top-0 z-50 bg-white flex justify-between items-center mb-6 pt-0">
         {/* 뒤로가기 버튼 */}
         <button onClick={handleBack} className="text-grey-100">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

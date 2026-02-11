@@ -46,9 +46,9 @@ export default function RegulationPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col">
+    <div className="h-[100svh] bg-white flex flex-col overflow-hidden">
       {/* 메인 컨텐츠 영역 */}
-      <div className="flex-1 px-5 pt-6 pb-32">
+      <div className="flex-1 overflow-y-auto px-5 pt-6 pb-32">
         {/* 헤더 */}
         <Header backUrl="/calculator" />
 
@@ -195,7 +195,7 @@ export default function RegulationPage() {
       </div>
 
       {/* 하단 고정 버튼 */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white p-5 safe-area-inset-bottom">
+      <div className="fixed bottom-0 left-0 right-0 bg-white px-5 pt-5 pb-10 safe-area-inset-bottom">
         <button
           onClick={handleSubmit}
           disabled={isLoading || !selectedOption}

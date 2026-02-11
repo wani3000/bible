@@ -3,8 +3,8 @@ import Header from '@/components/Header';
 
 export default function NewsPage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <div className="flex-1 px-5 pt-6 pb-32">
+    <div className="h-[100svh] bg-white flex flex-col overflow-hidden">
+      <div className="flex-1 overflow-y-auto px-5 pt-6 pb-32">
         <Header backUrl="/" />
         
         <h1 className="text-grey-100 text-2xl font-bold leading-8 tracking-[-0.24px] mb-6">
@@ -200,7 +200,7 @@ export default function NewsPage() {
       </div>
       
       {/* 하단 고정 버튼 */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-5">
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-5 pt-5 pb-10">
         <Link href="/calculator" className="flex h-14 w-full justify-center items-center rounded-[300px] bg-primary text-white font-semibold text-base">
           계산기 사용하기
         </Link>

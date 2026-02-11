@@ -153,10 +153,10 @@ export default function CalculatorPage() {
         <meta name="twitter:description" content="현금 + 연봉으로 살 수 있는 서울 아파트 금액을 계산해보세요. 전세 or 실거주 대출 모드 제공." />
         <meta name="twitter:image" content="https://aptgugu.com/og.png" />
       </Head>
-      <div className="min-h-screen bg-white flex flex-col">
+      <div className="h-[100svh] bg-white flex flex-col overflow-hidden">
         {/* 메인 컨텐츠 영역 */}
         <div
-          className="flex-1 px-5 pt-6"
+          className="flex-1 overflow-y-auto px-5 pt-6"
           style={{
             paddingBottom: '80px',
           }}
@@ -509,7 +509,7 @@ export default function CalculatorPage() {
         </div>
 
         {/* 하단 고정 버튼 */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 p-5 safe-area-inset-bottom" style={{ zIndex: 1000 }}>
+        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-5 pt-5 pb-10 safe-area-inset-bottom" style={{ zIndex: 1000 }}>
           <button
             onClick={handleSubmit}
             disabled={
