@@ -9,6 +9,9 @@
     "lint": "next lint",
     "test": "vitest",
     "test:run": "vitest run",
+    "ios:sync": "npm run build && npx cap sync ios",
+    "ios:open": "npx cap open ios",
+    "ios:testflight:prep": "npm run test:run && npm run ios:sync",
     "postbuild": "next-sitemap",
     "build:bible:data": "node tools/build-bible-json.mjs",
     "validate:bible:data": "node tools/validate-bible-data.mjs"
