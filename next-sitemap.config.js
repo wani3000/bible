@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://aptgugu.com',
+  siteUrl: 'https://bible.local',
   generateRobotsTxt: true,
-}; 
+};

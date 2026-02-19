@@ -1,6 +1,6 @@
-# iOS TestFlight Checklist (aptgugu)
+# iOS TestFlight Checklist (KorRV Bible)
 
-Last updated: 2026-02-19
+Last updated: 2026-02-20
 
 ## 1) Local Preflight
 
@@ -16,11 +16,11 @@ Expected:
 - Next build succeeds
 - Capacitor sync completes
 
-## 2) Version / Build (already set)
+## 2) Version / Build
 
 - `MARKETING_VERSION`: `1.1.0`
 - `CURRENT_PROJECT_VERSION`: `3`
-- Bundle ID: `com.aptgugu.calculator`
+- Bundle ID: `com.wani3000.bible`
 - Deployment target: iOS 15.0
 
 If you submit another build, increase `CURRENT_PROJECT_VERSION` by 1.
@@ -32,7 +32,7 @@ npm run ios:open
 ```
 
 Then in Xcode:
-- Target: `aptgugu`
+- Target: `aptgugu` (rename optional)
 - Signing: Automatic
 - Team: `3Q34V4BH5D`
 - Device: `Any iOS Device (arm64)`
@@ -54,6 +54,5 @@ Then in Xcode:
 
 - Build number duplicated: bump `CURRENT_PROJECT_VERSION`
 - Signing/provisioning issue: reselect Team and Bundle ID in Xcode
-- Missing icon/screenshot metadata: complete in App Store Connect
+- Missing metadata in App Store Connect: complete before external test
 - JS not updated in app: rerun `npm run ios:sync`
-

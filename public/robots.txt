@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://aptgugu.com
+Host: https://bible.local
 
 # Sitemaps
-Sitemap: https://aptgugu.com/sitemap.xml
+Sitemap: https://bible.local/sitemap.xml

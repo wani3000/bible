@@ -1,77 +1,61 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: '개인정보처리방침 - 아파트 가격 계산기',
-  description: '아파트 가격 계산기 개인정보처리방침',
+  title: "개인정보처리방침 - KorRV 성경 앱",
+  description: "KorRV 성경 앱 개인정보처리방침",
 };
 
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-4xl mx-auto px-5">
-        <h1 className="text-3xl font-bold mb-8 text-gray-900">개인정보처리방침</h1>
-        
-        <div className="bg-white rounded-lg shadow-sm p-8 space-y-6">
+      <div className="mx-auto max-w-4xl px-5">
+        <h1 className="mb-8 text-3xl font-bold text-gray-900">개인정보처리방침</h1>
+
+        <div className="space-y-6 rounded-lg bg-white p-8 shadow-sm">
           <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">1. 개인정보의 처리목적</h2>
-            <p className="text-gray-700 leading-relaxed">
-              아파트 가격 계산기는 다음의 목적을 위하여 개인정보를 처리합니다:
+            <h2 className="mb-4 text-xl font-semibold text-gray-800">1. 개인정보 처리목적</h2>
+            <p className="leading-relaxed text-gray-700">
+              KorRV 성경 앱은 성경 읽기 진행 저장, 그룹 초대/읽기 현황 제공, 서비스 안정화 및 통계 분석 목적으로
+              개인정보를 처리합니다.
             </p>
-            <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700 ml-4">
-              <li>아파트 가격 계산 서비스 제공</li>
-              <li>서비스 이용통계 분석</li>
-              <li>서비스 개선 및 최적화</li>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-xl font-semibold text-gray-800">2. 처리 항목</h2>
+            <ul className="ml-4 list-inside list-disc space-y-1 text-gray-700">
+              <li>읽기 기록(권/장/절, 읽기 시각)</li>
+              <li>그룹 기능을 위한 로컬 사용자 식별 정보</li>
+              <li>디바이스/접속 정보(오류 분석 및 성능 개선)</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">2. 처리하는 개인정보의 항목</h2>
-            <p className="text-gray-700 leading-relaxed">
-              본 서비스는 다음과 같은 정보를 수집합니다:
-            </p>
-            <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700 ml-4">
-              <li>연봉 정보 (계산 목적)</li>
-              <li>접속 로그 (서비스 이용통계)</li>
-              <li>IP 주소, 브라우저 정보 (서비스 제공 목적)</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">3. 개인정보의 보유 및 이용기간</h2>
-            <p className="text-gray-700 leading-relaxed">
-              개인정보는 서비스 이용 중에만 보유되며, 브라우저 종료 시 삭제됩니다.
-              접속 로그는 서비스 개선 목적으로만 사용됩니다.
+            <h2 className="mb-4 text-xl font-semibold text-gray-800">3. 보유 및 이용기간</h2>
+            <p className="leading-relaxed text-gray-700">
+              현재 버전은 로컬 저장소 중심으로 동작하며 앱 삭제 시 데이터가 함께 삭제됩니다. 서버 연동 도입 시
+              별도 보관 정책을 공지합니다.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">4. 제3자 제공</h2>
-            <p className="text-gray-700 leading-relaxed">
-              본 서비스는 개인정보를 제3자에게 제공하지 않습니다. 
-              다만, 법적 요구가 있는 경우에는 예외적으로 제공할 수 있습니다.
+            <h2 className="mb-4 text-xl font-semibold text-gray-800">4. 제3자 제공</h2>
+            <p className="leading-relaxed text-gray-700">
+              법령에 근거한 경우를 제외하고 개인정보를 제3자에게 제공하지 않습니다.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">5. 정보주체의 권리·의무</h2>
-            <p className="text-gray-700 leading-relaxed">
-              이용자는 개인정보 처리에 대한 동의를 거부할 권리가 있습니다.
-              다만, 동의 거부 시 서비스 이용에 제한이 있을 수 있습니다.
+            <h2 className="mb-4 text-xl font-semibold text-gray-800">5. 이용자 권리</h2>
+            <p className="leading-relaxed text-gray-700">
+              이용자는 개인정보 처리 동의를 거부할 수 있으며, 일부 기능 이용이 제한될 수 있습니다.
             </p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold mb-4 text-gray-800">6. 연락처</h2>
-            <p className="text-gray-700 leading-relaxed">
-              개인정보처리방침에 관한 문의사항이 있으시면 언제든지 연락 주시기 바랍니다.
-            </p>
-          </section>
-
-          <div className="mt-8 pt-6 border-t border-gray-200 text-sm text-gray-500">
-            최종 수정일: {new Date().toLocaleDateString('ko-KR')}
+          <div className="mt-8 border-t border-gray-200 pt-6 text-sm text-gray-500">
+            최종 수정일: {new Date().toLocaleDateString("ko-KR")}
           </div>
         </div>
       </div>
     </div>
   );
-} 
+}
