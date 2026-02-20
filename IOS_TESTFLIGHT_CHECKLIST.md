@@ -32,7 +32,7 @@ npm run ios:open
 ```
 
 Then in Xcode:
-- Target: `aptgugu` (rename optional)
+- Target: `bibleforkorean`
 - Signing: Automatic
 - Team: `3Q34V4BH5D`
 - Device: `Any iOS Device (arm64)`
